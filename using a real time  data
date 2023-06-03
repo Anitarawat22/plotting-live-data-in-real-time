@@ -1,0 +1,28 @@
+
+COUNT FUNCTION FROM ITERTTOLS LIBRARY
+- it counts up one number at a time and each time we get the next value
+from itertools import count
+
+RANDOM 
+- it is used to count the random values between the two ranges values
+import random
+
+PANDAS 
+-import pandas as pd
+
+PYPLOT
+-import matplotlib.pyplot as plt
+
+FUNCANIMATION
+-from matplotlib.animation import FuncAnimation
+
+x_value = []
+y_value = []
+
+index = count()
+
+def animate(i):
+    x_value.append(next(index))
+    y_value.append(random.randint(0,5))
+    
+plt.plot(x_value,y_value)
